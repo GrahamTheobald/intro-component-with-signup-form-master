@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+
+  <script src="./script.js" defer></script>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
@@ -26,10 +28,26 @@
       </article>
       
       <form class="component__form">
-        <input id="firstName" name="firstName" type="text" autocomplete="off" placeholder="First Name">
-        <input id="lastName" name="lastName" type="text" autocomplete="off" placeholder="Last Name">
-        <input id="emailAddress" name="emailAddress" type="text" autocomplete="off" placeholder="Email Address">
-        <input id="password" name="password" type="password" placeholder="Password">
+        <div class="component__form__input">
+          <input id="firstName" name="firstName" type="text" autocomplete="off" placeholder="First Name">
+          <img class="hidden" src="./images/icon-error.svg" alt="error">
+          <p class="errorMessage hidden">First Name cannot be empty.</p>
+        </div>
+        <div class="component__form__input">
+          <input id="lastName" name="lastName" type="text" autocomplete="off" placeholder="Last Name">
+          <img class="hidden" src="./images/icon-error.svg" alt="error">
+          <p class="errorMessage hidden">Last Name cannot be empty.</p>
+        </div>
+        <div class="component__form__input">
+          <input id="emailAddress" name="emailAddress" type="text" autocomplete="off" placeholder="Email Address">
+          <img class="hidden" src="./images/icon-error.svg" alt="error">
+          <p class="errorMessage hidden">Looks like this is not an email.</p>
+        </div>
+        <div class="component__form__input">
+          <input id="password" name="password" type="password" placeholder="Password">
+          <img class="hidden" src="./images/icon-error.svg" alt="error">
+          <p class="errorMessage hidden">Password cannot be empty.</p>
+        </div>
         <button type="submit">
           Claim your free trial 
         </button>
