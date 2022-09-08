@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: hsl(0deg, 100%, 74%);
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 375px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+.component__header {
+  margin: 1rem 0;
+}
+.component__header h1 {
+  padding: 0 1, 5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.component__pricing {
+  background-color: hsl(248deg, 32%, 49%);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+}
+.component__pricing span {
+  font-weight: 600;
+}
+.component__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+}
+.component__form input {
+  padding: 1rem;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
+.component__form button {
+  background-color: hsl(154deg, 59%, 51%);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.component__form p {
+  padding: 0 1rem;
+  font-size: 0.6rem;
+  color: hsl(246deg, 25%, 77%);
+}
+.component__form p span {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */
